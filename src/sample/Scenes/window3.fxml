@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Scenes.windows3Controller">
    <children>
-      <Button layoutX="493.0" layoutY="348.0" mnemonicParsing="false" text="Guardar" />
-      <TextField layoutX="185.0" layoutY="51.0" prefHeight="25.0" prefWidth="355.0" />
-      <TextField layoutX="185.0" layoutY="188.0" prefHeight="25.0" prefWidth="355.0" />
-      <TextField layoutX="185.0" layoutY="148.0" prefHeight="25.0" prefWidth="355.0" />
-      <TextField layoutX="185.0" layoutY="229.0" prefHeight="25.0" prefWidth="355.0" />
+      <Button layoutX="493.0" layoutY="348.0" mnemonicParsing="false" onAction="#pressButtonGua" text="Guardar" />
+      <TextField fx:id="nombreEnfermedad" layoutX="185.0" layoutY="51.0" prefHeight="25.0" prefWidth="355.0" />
+      <TextField fx:id="sintoma2" layoutX="185.0" layoutY="188.0" prefHeight="25.0" prefWidth="355.0" />
+      <TextField fx:id="sintoma1" layoutX="185.0" layoutY="148.0" prefHeight="25.0" prefWidth="355.0" />
+      <TextField fx:id="sintoma3" layoutX="185.0" layoutY="229.0" prefHeight="25.0" prefWidth="355.0" />
       <Label layoutX="114.0" layoutY="152.0" text="Sintoma 1:" textFill="WHITE">
          <font>
             <Font size="14.0" />

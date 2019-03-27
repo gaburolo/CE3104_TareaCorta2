@@ -40,7 +40,7 @@ public class Controller implements Initializable {
 
     @FXML
     private void pressButtoReg(ActionEvent event) throws IOException {
-        Parent root2 =FXMLLoader.load(getClass().getResource("window3.fxml"));
+        Parent root2 =FXMLLoader.load(getClass().getResource("Scenes/window3.fxml"));
         Scene scene2 = new Scene(root2);
         Stage stage2 = new Stage();
         stage2.setTitle("Registro");
