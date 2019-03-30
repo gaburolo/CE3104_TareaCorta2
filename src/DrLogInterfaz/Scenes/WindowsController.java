@@ -16,11 +16,22 @@ import java.util.ResourceBundle;
 public class WindowsController implements Initializable {
 
 
-
+    /**
+     * Constructor
+     * @throws IOException
+     */
     public WindowsController() throws IOException {
     }
 
-
+    /**
+     * Accion al presionar el boton "Consulta"
+     * crea una ventana de tipo "windows2"
+     * obtiene su fxml
+     * da las caracteristicas a la ventana
+     * la muestra
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void pressButtonCon(ActionEvent event) throws IOException {
 
@@ -37,7 +48,15 @@ public class WindowsController implements Initializable {
 
 
     }
-
+    /**
+     * Accion al presionar el boton "Consulta"
+     * crea una ventana de tipo "windows3"
+     * obtiene su fxml
+     * da las caracteristicas a la ventana
+     * la muestra
+     * @param event
+     * @throws IOException
+     */
     @FXML
     private void pressButtoReg(ActionEvent event) throws IOException {
         Parent root2 =FXMLLoader.load(getClass().getResource("window3.fxml"));
@@ -49,6 +68,12 @@ public class WindowsController implements Initializable {
         stage2.show();
     }
 
+    /**
+     * Inicializador de la pantalla numero 1
+     * Muestra el primer texto en la pantalla
+     * @param location la ubicacion de sus fxml
+     * @param resources los recursos
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 

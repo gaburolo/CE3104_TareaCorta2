@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DrLogInterfaz.Scenes.Windows3Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="609.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DrLogInterfaz.Scenes.Windows3Controller">
    <children>
-      <Button layoutX="493.0" layoutY="348.0" mnemonicParsing="false" onAction="#pressButtonGua" text="Guardar" />
+      <Button layoutX="540.0" layoutY="371.0" mnemonicParsing="false" onAction="#pressButtonGua" text="Guardar" />
       <TextField fx:id="nombreEnfermedad" layoutX="185.0" layoutY="51.0" prefHeight="25.0" prefWidth="355.0" />
       <TextField fx:id="sintoma2" layoutX="185.0" layoutY="188.0" prefHeight="25.0" prefWidth="355.0" />
       <TextField fx:id="sintoma1" layoutX="185.0" layoutY="148.0" prefHeight="25.0" prefWidth="355.0" />
@@ -40,5 +40,23 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <TextField fx:id="cuidado" layoutX="185.0" layoutY="270.0" prefHeight="25.0" prefWidth="355.0" />
+      <TextField fx:id="causa" layoutX="185.0" layoutY="309.0" prefHeight="25.0" prefWidth="355.0" />
+      <Label layoutX="140.0" layoutY="312.0" text="Causa:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="273.0" text="Cuidados:" textFill="#f2f0f0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="348.0" text="Prevenciones:" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prevenciones" layoutX="185.0" layoutY="346.0" prefHeight="25.0" prefWidth="355.0" />
    </children>
 </AnchorPane>

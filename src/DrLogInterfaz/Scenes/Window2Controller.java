@@ -13,14 +13,25 @@ import java.util.ResourceBundle;
 
 public class Window2Controller implements Initializable {
 
-    String texto="";
-    Prolog prolog = new Prolog();
-    Text text = new Text(texto);
+
+    /**
+     * Atributos de window2
+     */
+    private String texto="";
+    private Prolog prolog = new Prolog();
+    private Text text = new Text(texto);
     @FXML
     public ScrollPane scrollPane1;
-
     @FXML
     private TextField textField1;
+
+    /**
+     * Accion tealizada por el boton "Enviar"
+     * este toma el texto ingresado en el textField1
+     * comprueba si no esta vacio
+     * lo envia a la clase prolog y lo muestra en pantalla
+     * @param event
+     */
     public void pressButtonEnv(ActionEvent event) {
         scrollPane1.setFitToWidth(true);
         if(textField1.getText().equals("")){
@@ -39,6 +50,12 @@ public class Window2Controller implements Initializable {
         }
 
     }
+    /**
+     * Inicializador de la pantalla numero 2
+     * Muestra el primer texto en la pantalla
+     * @param location la ubicacion de sus fxml
+     * @param resources los recursos
+     */
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

@@ -6,12 +6,21 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Windows3Controller implements Initializable{
 
-    String registro="";
+
+    /**
+     * Atributos de window3
+     */
+    private String ruta = "C:/Users/martinPC/IdeaProjects/proyecto_intefaz/DrLog_Java.pl";
+    private String registro;
     @FXML
     private TextField nombreEnfermedad;
     @FXML
@@ -20,8 +29,19 @@ public class Windows3Controller implements Initializable{
     private TextField sintoma2;
     @FXML
     private TextField sintoma3;
-
     @FXML
+    private TextField cuidado;
+    @FXML
+    private TextField causa;
+    @FXML
+    private TextField prevenciones;
+    @FXML
+
+    /**
+     * Accion al presionar el boton guardar en la ventana 3
+     * Este comprueba que los sintomas y el nombre del a enfermedad esten llenos
+     * Guarda en el archivo prolog la nueva enfemerdad con cada una de sus caracteristicas
+     */
     private void pressButtonGua(ActionEvent e) {
 
 
@@ -32,6 +52,30 @@ public class Windows3Controller implements Initializable{
             alert.setContentText("Debe rellenar todos los campos");
             alert.showAndWait();
         }else {
+
+
+            File archivo = new File(ruta);
+            BufferedWriter bw;
+            String enfermedad="enfermedad('"+nombreEnfermedad.getText()+"',['"+sintoma1.getText().replace(" ","")+"','"+sintoma2.getText().replace(" ","")+"','"+sintoma3.getText().replace(" ","")+"'],"+"\""+cuidado.getText()+"\""+","+"\""+causa.getText()+"\""+",\""+prevenciones.getText()+"\").";
+            //String enfermedad="enfermedad("+"\""+nombreEnfermedad.getText()+"\""+",["+"\""+sintoma1.getText()+"\""+","+"\""+sintoma2+"\""+","+"\""+sintoma3.getText()+"\""+"],"+"\""+cuidado.getText()+"\""+","+"\""+causa.getText()+"\").";
+            try {
+
+                if(!archivo.exists()){
+                    archivo.createNewFile();
+                }
+
+                BufferedWriter Fescribe=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(archivo,true), "utf-8"));
+
+                Fescribe.write(enfermedad + "\r\n");
+                System.out.println(enfermedad);
+
+               Fescribe.close();
+            } catch (Exception ex) {
+                System.out.println(ex.getMessage());
+            }
+
+
+
             registro = nombreEnfermedad.getText() + ": " + sintoma1.getText() + ", " + sintoma2.getText() + ", " + sintoma3.getText();
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -44,6 +88,11 @@ public class Windows3Controller implements Initializable{
 
 }
 
+    /**
+     * Inicializador de la pantalla numero 3
+     * @param location la ubicacion de sus fxml
+     * @param resources los recursos
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 

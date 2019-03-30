@@ -9,7 +9,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     /**
-     *
+     *Crea la pantalla 1
+     * muestra la pantalla 1 con sus debidos recursos
      * @param primaryStage
      * @throws Exception
      */
@@ -26,7 +27,7 @@ public class Main extends Application {
     }
 
     /**
-     *
+     *Main
      * @param args
      */
     public static void main(String[] args) {

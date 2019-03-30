@@ -9,6 +9,10 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Prolog {
+
+    /**
+     * Atributos de la clase prolog
+     */
     private ArrayList<String> sintomas=new ArrayList<String>();;
 
     BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
@@ -16,6 +20,11 @@ public class Prolog {
     String conexion="consult('DrLog_Java.pl')";
     boolean bandera=true;
 
+    /**
+     * Constructor de la clase
+     * inicia la conexion con prolog
+     * muestra si esta ha sido exitosa
+     */
     public Prolog(){
         System.out.println("Bienvenido a su consulta medica proceda a hablar con DrLog");
         Query Consul_Prolog = new Query(conexion);
@@ -27,31 +36,30 @@ public class Prolog {
 
     }
 
-
+    /**
+     * Metodo que enviara los mensajes a prolog mediante su conexion
+     * Mostrara los mensajes nuevos en el chat de la ventana 2
+     * @param ingreso String con el mensaje a enviar
+     * @param scrollPane ScrollPane objeto que muestra el texto en el chat
+     * @param texto String concatena el nuevo mensaje con lo escrito anteriormente y lo que se recibe
+     * @param text Text da forma a la variable "texto" para poder mostrarse en el "scrollPane"
+     */
     public void mensaje(String ingreso,ScrollPane scrollPane,String texto,Text text){
 
         if(sintomas.size()!=3){
             String consulta="consulta("+"\""+ingreso+"\""+",X)";
             Query rpta001=new Query(consulta);
-
             String salida = rpta001.oneSolution().get("X").toString().substring(1, rpta001.oneSolution().get("X").toString().length() - 1).toString();
             if(sintomas.size()!=2){
-
                 texto=text.getText()+"\n"+"(DrLog): "+salida;
                 text.setText(texto);
                 scrollPane.setContent(text);
-
             }
-
             System.out.println("salida"+salida);
-            //Window2Controller.scrollPane1.setContent(text);
+
             String verificar="verificar_pregunta("+"\""+salida+"\""+","+"\""+ingreso+"\""+",X)";
-
-
             Query rpta002=new Query(verificar);
-
             String salida2 = rpta002.oneSolution().get("X").toString();
-
             System.out.println("salida2"+salida2);
             if('1'!= salida2.charAt(1) ){
                 sintomas.add(salida2);
@@ -81,6 +89,15 @@ public class Prolog {
         }
 
     }
+
+    /**
+     * Al igual que el anterior metodo este es la segunda parte de envio de mensajes a prolog
+     * Muestra los mensajes anteriores y los nuevos en el chat de la ventana 2
+     * @param mensaje String con el mensaje a enviar
+     * @param scrollPane ScrollPane objeto que muestra el texto en el chat
+     * @param texto String concatena el nuevo mensaje con lo escrito anteriormente y lo que se recibe
+     * @param text Text da forma a la variable "texto" para poder mostrarse en el "scrollPane"
+     */
     private void mensaje2(String mensaje,ScrollPane scrollPane,String texto,Text text){
         String consulta2="consulta2(\""+mensaje+"\",\""+enfermedad+"\",X)";
         System.out.println(consulta2);
