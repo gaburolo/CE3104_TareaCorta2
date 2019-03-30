@@ -19,8 +19,11 @@ public class Windows3Controller implements Initializable{
     /**
      * Atributos de window3
      */
-    private String ruta = "C:/Users/martinPC/IdeaProjects/proyecto_intefaz/DrLog_Java.pl";
+    private String ruta = "C:/Users/gaburolo/IdeaProjects/proyecto_intefaz/DrLog_Java.pl";
+    private String ruta2= "C:/Users/gaburolo/IdeaProjects/proyecto_intefaz/DrLog.pl";
     private String registro;
+
+
     @FXML
     private TextField nombreEnfermedad;
     @FXML
@@ -55,21 +58,24 @@ public class Windows3Controller implements Initializable{
 
 
             File archivo = new File(ruta);
-            BufferedWriter bw;
+            File archivo2 = new File(ruta2);
+
             String enfermedad="enfermedad('"+nombreEnfermedad.getText()+"',['"+sintoma1.getText().replace(" ","")+"','"+sintoma2.getText().replace(" ","")+"','"+sintoma3.getText().replace(" ","")+"'],"+"\""+cuidado.getText()+"\""+","+"\""+causa.getText()+"\""+",\""+prevenciones.getText()+"\").";
-            //String enfermedad="enfermedad("+"\""+nombreEnfermedad.getText()+"\""+",["+"\""+sintoma1.getText()+"\""+","+"\""+sintoma2+"\""+","+"\""+sintoma3.getText()+"\""+"],"+"\""+cuidado.getText()+"\""+","+"\""+causa.getText()+"\").";
+            String enfermedad2="enfermedad("+"\""+nombreEnfermedad.getText()+"\""+",["+"\""+sintoma1.getText().replace(" ","")+"\""+","+"\""+sintoma2.getText().replace(" ","")+"\""+","+"\""+sintoma3.getText().replace(" ","")+"\""+"],"+"\""+cuidado.getText()+"\""+","+"\""+causa.getText()+"\",\""+prevenciones.getText()+"\").";
             try {
 
                 if(!archivo.exists()){
                     archivo.createNewFile();
+                    archivo2.createNewFile();
                 }
 
                 BufferedWriter Fescribe=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(archivo,true), "utf-8"));
-
+                BufferedWriter Fescribe2=new BufferedWriter(new OutputStreamWriter(new FileOutputStream(archivo2,true), "utf-8"));
                 Fescribe.write(enfermedad + "\r\n");
+                Fescribe2.write(enfermedad2+"\r\n");
                 System.out.println(enfermedad);
-
-               Fescribe.close();
+                Fescribe2.close();
+                Fescribe.close();
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
             }

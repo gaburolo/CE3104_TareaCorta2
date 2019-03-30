@@ -14,15 +14,15 @@ igualdad(X,X).
 % Son de la forma:
 % hecho(["palabra clave 1","palabra clave 2",...,"palabra clave n"]).
 saludo(["Hola","hola","Buenas","buenas","Buenos","buenos"]).
-despedida(["adios","Adios","luego","gracias","Gracias"]).
+despedida(["adios","Adios","luego","gracias","Gracias","Luego"]).
 afirmacion(["Bueno","bueno","Ok","si","Si","ok","Correcto","correcto","Afirmativo","afirmativo"]).
 negacion(["No","no","negativo","Negativo","Incorrecto","incorrecto"]).
 verbo1erP(["tengo","Tengo","tenido","siento","Siento","sentido","oigo","me"]).
 conjuncion(["tambien","y","e"]).
 pregunta(["que","Que","Como","como","cuales","Cuales","¿que","¿Que","¿Como","¿como","¿cuales","¿Cuales"]).
-dictaminar(["quetengo","Quetengo","¿quetengo?","quetengo?","¿Quetengo?","Quetengo?","quetengodoctor","Quetengodoctor","¿quetengodoctor?","quetengodoctor?","¿Quetengodoctor?","Quetengodoctor?","quetengoDoctor","QuetengoDoctor","¿quetengoDoctor?","quetengoDoctor?","¿QuetengoDoctor?","QuetengoDoctor?"]).
+dictaminar(["quetengo","Quetengo","¿quetengo?","quetengo?","¿Quetengo?","Quetengo?","quetengodoctor","Quetengodoctor","¿quetengodoctor?","quetengodoctor?","¿Quetengodoctor?","Quetengodoctor?","quetengoDoctor","QuetengoDoctor","¿quetengoDoctor?","quetengoDoctor?","¿QuetengoDoctor?","QuetengoDoctor?","quetengodrlog","quetengoDrLog","quetengoDrlog","queenfermedadtengo","queenfermedadtengo?","cualeslaenfermedadquepadezco","cualeslaenfermedadquepadezco?"]).
 dar_cuidados(["quetengoquetomar","Quetengoquetomar","¿quetengoquetomar?","quetengoquetomar?","¿Quetengoquetomar?","Quetengoquetomar?","quedebotomar","Quedebotomar","¿quedebotomar?","quedebotomar?","¿Quedebotomar?","Quedebotomar?","cualescuidadosdebotener","cualescuidadosdebotener?","¿cualescuidadosdebotener?","quecuidadosdebotener","quecuidadosdebotener?","¿quecuidadosdebotener?","cualescuidadostengoquetener","cualescuidadostengoquetener?","¿cualescuidadostengotener?","quetengoquetomardoctor","Quetengoquetomardoctor","¿quetengoquetomardoctor?","quetengoquetomardoctor?","¿Quetengoquetomardoctor?","Quetengoquetomardoctor?","quedebotomardoctor","Quedebotomardoctor","¿quedebotomardoctor?","quedebotomardoctor?","¿Quedebotomardoctor?","Quedebotomardoctor?","cualescuidadosdebotenerdoctor","cualescuidadosdebotenerdoctor?","¿cualescuidadosdebotenerdoctor?","cualescuidadostengoquetenerdoctor","cualescuidadostengoquetenerdoctor?","¿cualescuidadostengotenerdoctor?"]).
-dar_causas(["cualessonlascausa","¿cualessonlascausa","Cualessonlascausa","¿Cualessonlascausa","quelocausa","¿quelocausa","Quelocausa","¿Quelocausa"]).
+dar_causas(["cualessonlascausa","¿cualessonlascausa","Cualessonlascausa","¿Cualessonlascausa","quelocausa","¿quelocausa","Quelocausa"]).
 freno_causas(["causas","causa","provoca","causas?","causa?","provoca?"]).
 dar_prevenciones(["comopuedoevita","¿comopuedoevita","¿Comopuedoevita","comoseevita","¿comoseevita","Comoseevita","¿Comoseevita","comolaevita","¿comolaevita","Comolaevita","¿Comolaevita","comoloevita","¿comoloevita","Comoloevita","¿Comoloevita","comoseevita","¿comoseevita","Comoseevita","¿Comoseevita","quemaneraloevita","quemaneraseevita"]).
 freno_prevenciones(["prevenirla","previene","evitar","evita","evitarla","evito","prevengo","prevenirla?","previene?","evitar?","evita?","evitarla?","evito?","prevengo?"]).
@@ -45,8 +45,8 @@ consulta2(String,E,R):-split_string(String,' ','',List),comparador2(List,E,R).
 verificar_pregunta(P,_,S):-igualdad('No entendi lo que me dijiste. Podrias tratar de decirmelo diferente, o continuamos con otra cosa',P),igualdad('1',S).
 verificar_pregunta(P,R,S):-igualdad('Que otro sintoma presenta?',P),split_string(R,' ','',List),comprobar(List,S).
 verificar_pregunta(P,_,S):-igualdad('Buenas en que le puedo ayudar??',P),igualdad('1',S).
-verificar_pregunta(P,_,S):-igualdad("Bueno dime algun sintoma para poder dictaminarte",P),igualdad("1",S).
-verificar_pregunta(P,_,S):-igualdad("Aun no tengo los datos suficientes para responder alguna pregunta!",P),igualdad("1",S).
+verificar_pregunta(P,_,S):-igualdad('Bueno dime algun sintoma para poder dictaminarte',P),igualdad("1",S).
+verificar_pregunta(P,_,S):-igualdad('Aun no tengo los datos suficientes para responder alguna pregunta!',P),igualdad("1",S).
 
 
 
@@ -179,5 +179,4 @@ consultar:-
 % enfermedad(enfermedad,[sintoma1,sintoma2,sintoma3],cuidados,causas,prevenciones).
 enfermedad('sida',['dolordegarganta','cansanciopersistente','inflamacionpelvica'],"Se recomienda tomar el tratamiento antirretroviral (TAR) que es una combinación de medicamentos contra el VIH, vigile su peso corporal","El virus de inmunodeficiencia humana (VIH) es el virus que causa el sida. Cuando una persona se infecta con VIH, el virus ataca y debilita al sistema inmunitario. A medida que el sistema inmunitario se debilita, la persona está en riesgo de contraer infecciones y cánceres que pueden ser mortales","Mantenga sus pantalones arriba o use condon sin enbargo el segundo no es cien por ciento seguro xd").
 enfermedad('sarampion',['salpullido','fiebre','tosseca'],"Untece calamina en el salpullido y tome antibiotico durante 4 dias","El sarampión es una enfermedad vírica aguda causada por un paramixovirus del género Morbillivirus","Los padres deben chequear si sus hijos tienen las vacunas del calendario al día. De 12 meses a cuatro años deben acreditar una dosis de vacuna triple viral (sarampión-rubéola-paperas).").
-enfermedad('diabetes',['fatiga','entumecimiento','visionborrosa'],"medicina adecuada","sobreso, resitencia a la insulina, genes y antecendentes","prevenciones").
-enfermedad('asma',['sibilancias','tos','dolordepecho'],"visitar un medico, medicamentos","El asma es causada por una inflamacion (hinchazon) de las vías respiratorias","evitar ejercicios forzosos, objetos y cosas que te provoquen alergias").
+enfermedad('diabetes',['fatiga','entumecimiento','visionborrosa'],"medicina adecuada","sobreso, resitencia a la insulina, genes y antecendentes","ejercicio, plan adecuado de alimentacion, no fumar, revisiones ").

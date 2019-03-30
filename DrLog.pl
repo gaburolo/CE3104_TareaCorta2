@@ -19,12 +19,12 @@ afirmacion(["Bueno","bueno","Ok","si","Si","ok","Correcto","correcto","Afirmativ
 negacion(["No","no","negativo","Negativo","Incorrecto","incorrecto"]).
 verbo1erP(["tengo","Tengo","tenido","siento","Siento","sentido","oigo","me"]).
 conjuncion(["tambien","y","e"]).
-pregunta(["que","Que","Como","como","cuales","Cuales","¿que","¿Que","¿Como","¿como","¿cuales","¿Cuales"]).
-dictaminar(["quetengo","Quetengo","¿quetengo?","quetengo?","¿Quetengo?","Quetengo?","quetengodoctor","Quetengodoctor","¿quetengodoctor?","quetengodoctor?","¿Quetengodoctor?","Quetengodoctor?","quetengoDoctor","QuetengoDoctor","¿quetengoDoctor?","quetengoDoctor?","¿QuetengoDoctor?","QuetengoDoctor?"]).
-dar_cuidados(["quetengoquetomar","Quetengoquetomar","¿quetengoquetomar?","quetengoquetomar?","¿Quetengoquetomar?","Quetengoquetomar?","quedebotomar","Quedebotomar","¿quedebotomar?","quedebotomar?","¿Quedebotomar?","Quedebotomar?","cualescuidadosdebotener","cualescuidadosdebotener?","¿cualescuidadosdebotener?","quecuidadosdebotener","quecuidadosdebotener?","¿quecuidadosdebotener?","cualescuidadostengoquetener","cualescuidadostengoquetener?","¿cualescuidadostengotener?","quetengoquetomardoctor","Quetengoquetomardoctor","¿quetengoquetomardoctor?","quetengoquetomardoctor?","¿Quetengoquetomardoctor?","Quetengoquetomardoctor?","quedebotomardoctor","Quedebotomardoctor","¿quedebotomardoctor?","quedebotomardoctor?","¿Quedebotomardoctor?","Quedebotomardoctor?","cualescuidadosdebotenerdoctor","cualescuidadosdebotenerdoctor?","¿cualescuidadosdebotenerdoctor?","cualescuidadostengoquetenerdoctor","cualescuidadostengoquetenerdoctor?","¿cualescuidadostengotenerdoctor?"]).
-dar_causas(["cualessonlascausa","¿cualessonlascausa","Cualessonlascausa","¿Cualessonlascausa","quelocausa","¿quelocausa","Quelocausa","¿Quelocausa"]).
+pregunta(["que","Que","Como","como","cuales","Cuales","ï¿½que","ï¿½Que","ï¿½Como","ï¿½como","ï¿½cuales","ï¿½Cuales"]).
+dictaminar(["quetengo","Quetengo","ï¿½quetengo?","quetengo?","ï¿½Quetengo?","Quetengo?","quetengodoctor","Quetengodoctor","ï¿½quetengodoctor?","quetengodoctor?","ï¿½Quetengodoctor?","Quetengodoctor?","quetengoDoctor","QuetengoDoctor","ï¿½quetengoDoctor?","quetengoDoctor?","ï¿½QuetengoDoctor?","QuetengoDoctor?"]).
+dar_cuidados(["quetengoquetomar","Quetengoquetomar","ï¿½quetengoquetomar?","quetengoquetomar?","ï¿½Quetengoquetomar?","Quetengoquetomar?","quedebotomar","Quedebotomar","ï¿½quedebotomar?","quedebotomar?","ï¿½Quedebotomar?","Quedebotomar?","cualescuidadosdebotener","cualescuidadosdebotener?","ï¿½cualescuidadosdebotener?","quecuidadosdebotener","quecuidadosdebotener?","ï¿½quecuidadosdebotener?","cualescuidadostengoquetener","cualescuidadostengoquetener?","ï¿½cualescuidadostengotener?","quetengoquetomardoctor","Quetengoquetomardoctor","ï¿½quetengoquetomardoctor?","quetengoquetomardoctor?","ï¿½Quetengoquetomardoctor?","Quetengoquetomardoctor?","quedebotomardoctor","Quedebotomardoctor","ï¿½quedebotomardoctor?","quedebotomardoctor?","ï¿½Quedebotomardoctor?","Quedebotomardoctor?","cualescuidadosdebotenerdoctor","cualescuidadosdebotenerdoctor?","ï¿½cualescuidadosdebotenerdoctor?","cualescuidadostengoquetenerdoctor","cualescuidadostengoquetenerdoctor?","ï¿½cualescuidadostengotenerdoctor?"]).
+dar_causas(["cualessonlascausa","ï¿½cualessonlascausa","Cualessonlascausa","ï¿½Cualessonlascausa","quelocausa","ï¿½quelocausa","Quelocausa","ï¿½Quelocausa"]).
 freno_causas(["causas","causa","provoca","causas?","causa?","provoca?"]).
-dar_prevenciones(["comopuedoevita","¿comopuedoevita","¿Comopuedoevita","comoseevita","¿comoseevita","Comoseevita","¿Comoseevita","comolaevita","¿comolaevita","Comolaevita","¿Comolaevita","comoloevita","¿comoloevita","Comoloevita","¿Comoloevita","comoseevita","¿comoseevita","Comoseevita","¿Comoseevita","quemaneraloevita","quemaneraseevita"]).
+dar_prevenciones(["comopuedoevita","ï¿½comopuedoevita","ï¿½Comopuedoevita","comoseevita","ï¿½comoseevita","Comoseevita","ï¿½Comoseevita","comolaevita","ï¿½comolaevita","Comolaevita","ï¿½Comolaevita","comoloevita","ï¿½comoloevita","Comoloevita","ï¿½Comoloevita","comoseevita","ï¿½comoseevita","Comoseevita","ï¿½Comoseevita","quemaneraloevita","quemaneraseevita"]).
 freno_prevenciones(["prevenirla","previene","evitar","evita","evitarla","evito","prevengo","prevenirla?","previene?","evitar?","evita?","evitarla?","evito?","prevengo?"]).
 
 
@@ -50,9 +50,9 @@ Codes), atom_string(A, String), split_string(String,' ','',List),comparador2(Lis
 % En caso de reconocer que se da un sintoma se retorna este sintoma.
 % Si no se encuentra coinsidencia se da una respuesta predeterminada y
 % se continua con la consulta.
-comparador([],R):-igualdad("No entendi lo que me dijiste. ¿Podrias tratar de decirmelo diferente? o continuamos con otra cosa",P),write(P),nl,consulta(R).
+comparador([],R):-igualdad("No entendi lo que me dijiste. ï¿½Podrias tratar de decirmelo diferente? o continuamos con otra cosa",P),write(P),nl,consulta(R).
 comparador([X|Y],R):-verbo1erP(Z),miembro(X,Z),comprobar([X|Y],R).
-comparador([X|_],R):-saludo(Z),miembro(X,Z),igualdad("¿Buenas en que le puedo ayudar??",P),write(P),nl,consulta(R).
+comparador([X|_],R):-saludo(Z),miembro(X,Z),igualdad("ï¿½Buenas en que le puedo ayudar??",P),write(P),nl,consulta(R).
 comparador([X|Y],R):-conjuncion(Z),miembro(X,Z),comprobar([X|Y],R).
 comparador([X|_],R):-negacion(Z),miembro(X,Z),igualdad("Bueno dime algun sintoma para poder dictaminarte",P),write(P),nl,consulta(R).
 comparador([X|_],R):-pregunta(Z),miembro(X,Z),igualdad("Aun no tengo los datos suficientes para responder alguna pregunta!",P),write(P),nl,consulta(R).
@@ -63,12 +63,12 @@ comparador([_|Y],R):-comparador(Y,R).
 % Si se reconoce que se esta haciendo una pregunta se comprueba la
 % pregunta y se responde acorde a esta.
 % En caso de reconocer que el usuario se despide se termina la consulta.
-comparador2([],E):-igualdad("No entendi lo que me dijiste. ¿Podrias tratar de decirmelo diferente? o continuamos con otra cosa",P),write(P),nl,consulta2(E).
+comparador2([],E):-igualdad("No entendi lo que me dijiste. ï¿½Podrias tratar de decirmelo diferente? o continuamos con otra cosa",P),write(P),nl,consulta2(E).
 comparador2([X|Y],E):-pregunta(Z),miembro(X,Z),comprobar2([X|Y],E).
 comparador2([X|_],E):-verbo1erP(Z),miembro(X,Z),igualdad("Ya tengo los datos necesarios para dictaminarte, me lo puedes preguntar cuando quieras",P),write(P),nl,consulta2(E).
-comparador2([X|_],E):-afirmacion(Z),miembro(X,Z),igualdad("¿Y cual seria la pregunta??",P),write(P),nl,consulta2(E).
+comparador2([X|_],E):-afirmacion(Z),miembro(X,Z),igualdad("ï¿½Y cual seria la pregunta??",P),write(P),nl,consulta2(E).
 comparador2([X|_],E):-negacion(Z),miembro(X,Z),igualdad("Bueno si ya no quieres continuar despidete y damos por concluida la consulta",P),write(P),nl,consulta2(E).
-comparador2([X|_],E):-saludo(Z),miembro(X,Z),igualdad("Ehh ok hola! ¿dime en que mas te puedo ayudar??",P),write(P),nl,consulta2(E).
+comparador2([X|_],E):-saludo(Z),miembro(X,Z),igualdad("Ehh ok hola! ï¿½dime en que mas te puedo ayudar??",P),write(P),nl,consulta2(E).
 comparador2([X|_],E):-despedida(Z),miembro(X,Z),igualdad(E,E).
 comparador2([_|Y],E):-comparador2(Y,E).
 
@@ -84,7 +84,7 @@ comprobar([_|Y],Sintoma):-comprobar(Y,Sintoma).
 
 % Verificamos la lista ingresada palabra por palabra y una ves
 % reconocida la palabra clave se concatenan recursivamente en un solo
-% string las palabras posteriores de la lista hasta que se vacíe la
+% string las palabras posteriores de la lista hasta que se vacï¿½e la
 % lista o se reconosca alguna palabra para detenerse.
 devolver_sintoma(X,S):-igualdad(X,[]),igualdad("",S).
 devolver_sintoma([X|_],S):-verbo1erP(Z),miembro(X,Z),igualdad("",S).
@@ -115,23 +115,23 @@ concat_respuesta([X|Y],S):-concat_respuesta(Y,R),string_concat(X,R,S).
 
 
 % Esta regla verifica si el string ingresado es una pregunta valida, si
-% es así imprime lo que el usuario pregunto y se continua con la
+% es asï¿½ imprime lo que el usuario pregunto y se continua con la
 % consulta.
 % Por ejemplo si se verifica que la pregunta esta relacionada con causas
 % de la enfermedad, si es una enfermedad que esta registrada se imprimen
 % las causas y si no lo esta se da una respuesta predeterminada.
 verificar(P,E):-dictaminar(Z),miembro(P,Z),
     string_concat("Usted presenta los sintomas de: ",E,Dictamen),
-    write(Dictamen),nl,write("¿Alguna otra pregunta?"),nl,consulta2(E).
-verificar(P,E):-dar_cuidados(Z),miembro(P,Z),igualdad(E,"Enfermedad desconocida"),write("No se los cuidados de su enfermedad ya que no se encuentra registrada"),nl,write("¿Alguna otra pregunta?"),nl,consulta2(E).
+    write(Dictamen),nl,write("ï¿½Alguna otra pregunta?"),nl,consulta2(E).
+verificar(P,E):-dar_cuidados(Z),miembro(P,Z),igualdad(E,"Enfermedad desconocida"),write("No se los cuidados de su enfermedad ya que no se encuentra registrada"),nl,write("ï¿½Alguna otra pregunta?"),nl,consulta2(E).
 verificar(P,E):-dar_cuidados(Z),miembro(P,Z),enfermedad(E,_,C,_,_),write(C),nl
-    ,write("¿Alguna otra pregunta?"),nl,consulta2(E).
-verificar(P,E):-dar_causas(Z),miembro(P,Z),igualdad(E,"Enfermedad desconocida"),write("No se las causas de su enfermedad ya que no se encuentra registrada"),nl,write("¿Alguna otra pregunta?"),nl,consulta2(E).
+    ,write("ï¿½Alguna otra pregunta?"),nl,consulta2(E).
+verificar(P,E):-dar_causas(Z),miembro(P,Z),igualdad(E,"Enfermedad desconocida"),write("No se las causas de su enfermedad ya que no se encuentra registrada"),nl,write("ï¿½Alguna otra pregunta?"),nl,consulta2(E).
 verificar(P,E):-dar_causas(Z),miembro(P,Z),enfermedad(E,_,_,C,_),write(C),nl
-    ,write("¿Alguna otra pregunta?"),nl,consulta2(E).
-verificar(P,E):-dar_prevenciones(Z),miembro(P,Z),igualdad(E,"Enfermedad desconocida"),write("No se como se previene su enfermedad ya que no se encuentra registrada"),nl,write("¿Alguna otra pregunta?"),nl,consulta2(E).
+    ,write("ï¿½Alguna otra pregunta?"),nl,consulta2(E).
+verificar(P,E):-dar_prevenciones(Z),miembro(P,Z),igualdad(E,"Enfermedad desconocida"),write("No se como se previene su enfermedad ya que no se encuentra registrada"),nl,write("ï¿½Alguna otra pregunta?"),nl,consulta2(E).
 verificar(P,E):-dar_prevenciones(Z),miembro(P,Z),enfermedad(E,_,_,_,Prev),write(Prev),nl
-    ,write("¿Alguna otra pregunta?"),nl,consulta2(E).
+    ,write("ï¿½Alguna otra pregunta?"),nl,consulta2(E).
 
 
 
@@ -153,9 +153,9 @@ verificar_enfermedad(E,_,_,_):-igualdad(E,"Enfermedad desconocida").
 %Con esta regla se da inicio a la consulta como tal
 iniciar():-
     consulta(A),%retorna el primer sintoma
-    write("¿Que otro sintoma presenta?"),nl,
+    write("ï¿½Que otro sintoma presenta?"),nl,
     consulta(B),%retorna el segundo sintoma
-    write("¿Que otro sintoma presenta?"),nl,
+    write("ï¿½Que otro sintoma presenta?"),nl,
     consulta(C),%retorna el tercer sintoma
     verificar_enfermedad(Enfermedad,A,B,C),%verifica que la enfermedad exista
     write("Correcto ya tengo los sintomas suficientes, preguntame tu dictamen cuando quieras"),nl,
@@ -175,5 +175,6 @@ consultar:-
 % agregan nuevas se van agregando de ultimas.
 % Son de la forma:
 % enfermedad(enfermedad,[sintoma1,sintoma2,sintoma3],cuidados,causas,prevenciones).
-enfermedad("sida",["dolordegarganta","cansanciopersistente","inflamacionpelvica"],"Se recomienda tomar el tratamiento antirretroviral (TAR) que es una combinación de medicamentos contra el VIH, vigile su peso corporal","El virus de inmunodeficiencia humana (VIH) es el virus que causa el sida. Cuando una persona se infecta con VIH, el virus ataca y debilita al sistema inmunitario. A medida que el sistema inmunitario se debilita, la persona está en riesgo de contraer infecciones y cánceres que pueden ser mortales","Mantenga sus pantalones arriba o use condon sin enbargo el segundo no es cien por ciento seguro xd").
-enfermedad("sarampion",["salpullido","fiebre","tosseca"],"Untece calamina en el salpullido y tome antibiotico durante 4 dias","El sarampión es una enfermedad vírica aguda causada por un paramixovirus del género Morbillivirus","Los padres deben chequear si sus hijos tienen las vacunas del calendario al día. De 12 meses a cuatro años deben acreditar una dosis de vacuna triple viral (sarampión-rubéola-paperas).").
+enfermedad("sida",["dolordegarganta","cansanciopersistente","inflamacionpelvica"],"Se recomienda tomar el tratamiento antirretroviral (TAR) que es una combinaciï¿½n de medicamentos contra el VIH, vigile su peso corporal","El virus de inmunodeficiencia humana (VIH) es el virus que causa el sida. Cuando una persona se infecta con VIH, el virus ataca y debilita al sistema inmunitario. A medida que el sistema inmunitario se debilita, la persona estï¿½ en riesgo de contraer infecciones y cï¿½nceres que pueden ser mortales","Mantenga sus pantalones arriba o use condon sin enbargo el segundo no es cien por ciento seguro xd").
+enfermedad("sarampion",["salpullido","fiebre","tosseca"],"Untece calamina en el salpullido y tome antibiotico durante 4 dias","El sarampiï¿½n es una enfermedad vï¿½rica aguda causada por un paramixovirus del gï¿½nero Morbillivirus","Los padres deben chequear si sus hijos tienen las vacunas del calendario al dï¿½a. De 12 meses a cuatro aï¿½os deben acreditar una dosis de vacuna triple viral (sarampiï¿½n-rubï¿½ola-paperas).").
+enfermedad("diabetes",["fatiga","entumecimiento","visionborrosa"],"medicina adecuada","sobreso, resitencia a la insulina, genes y antecendentes","ejercicio, plan adecuado de alimentacion, no fumar, revisiones ").
