@@ -1,4 +1,4 @@
-package sample;
+package DrLogInterfaz.Scenes;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,18 +13,18 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-public class Controller implements Initializable {
+public class WindowsController implements Initializable {
 
 
 
-    public Controller() throws IOException {
+    public WindowsController() throws IOException {
     }
 
 
     @FXML
     public void pressButtonCon(ActionEvent event) throws IOException {
 
-        Parent root =FXMLLoader.load(getClass().getResource("Scenes/window2.fxml"));
+        Parent root =FXMLLoader.load(getClass().getResource("window2.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setTitle("Consulta");
@@ -40,7 +40,7 @@ public class Controller implements Initializable {
 
     @FXML
     private void pressButtoReg(ActionEvent event) throws IOException {
-        Parent root2 =FXMLLoader.load(getClass().getResource("Scenes/window3.fxml"));
+        Parent root2 =FXMLLoader.load(getClass().getResource("window3.fxml"));
         Scene scene2 = new Scene(root2);
         Stage stage2 = new Stage();
         stage2.setTitle("Registro");

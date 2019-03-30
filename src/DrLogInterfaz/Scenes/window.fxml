@@ -7,11 +7,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-image: doctor_prolog.png;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-image: doctor_prolog.png;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DrLogInterfaz.Scenes.WindowsController">
    <children>
       <ImageView blendMode="MULTIPLY" fitHeight="200.0" fitWidth="300.0" layoutX="76.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@doctor_prolog.png" />
+            <Image url="@../doctor_prolog.png" />
          </image>
       </ImageView>
       <Button fx:id="ButtonCon" layoutX="50.0" layoutY="75.0" mnemonicParsing="false" onAction="#pressButtonCon" text="Consulta" />

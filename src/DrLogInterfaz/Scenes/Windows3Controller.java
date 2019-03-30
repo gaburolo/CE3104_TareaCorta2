@@ -1,17 +1,15 @@
-package sample.Scenes;
+package DrLogInterfaz.Scenes;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-import sample.Controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class windows3Controller implements Initializable{
+public class Windows3Controller implements Initializable{
 
     String registro="";
     @FXML
